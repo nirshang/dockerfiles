@@ -1,6 +1,6 @@
 FROM almalinux:9
 ENV Course="Devops" \
     duration="120hr"
-ARG ${username:-some_user}
-RUN echo "Hello ${username}" > /tmp/devops.txt
+ARG NAME=Latha
+RUN echo "Hello user: ${NAME}}"
 CMD [ "sleep", "100" ]
